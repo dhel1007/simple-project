@@ -1,5 +1,6 @@
 import React from "react";
 import heroImage from "../assets/lot-status-hero.png";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
 
@@ -25,7 +26,7 @@ const Hero = () => {
                         <span className="block text-blue-600">
                             Verification of
                         </span>
-                        
+
                         <span className="block text-gray-600">
                             Lot Status
                         </span>
@@ -105,9 +106,9 @@ const Hero = () => {
 
                     {/* CTA */}
                     <div className="mt-10">
-                        <button
+                        {/* <button
                             onClick={() => {
-                                // Navigate to lot status page
+                                Navigate()
                             }}
                             className="group inline-flex items-center gap-3 rounded-full bg-blue-600 px-7 py-4 text-base font-semibold text-white shadow-lg shadow-blue-600/25 transition duration-300 hover:bg-blue-700 hover:shadow-xl hover:shadow-blue-600/30"
                         >
@@ -123,7 +124,14 @@ const Hero = () => {
                                 <path d="M5 12h14" />
                                 <path d="M13 6l6 6-6 6" />
                             </svg>
-                        </button>
+                        </button> */}
+
+                        <Link
+                            to="/lot-status"
+                            className="inline-block rounded-lg bg-green-700 px-6 py-3 font-semibold text-white hover:bg-green-800"
+                        >
+                            Check Lot Status
+                        </Link>
                     </div>
 
                 </div>
